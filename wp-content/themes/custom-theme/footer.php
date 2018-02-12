@@ -27,6 +27,18 @@
         </div>
       </div>
     </section>
+
+    <section class="footer-mobile">
+      <div class="footer-container" style="display: flex;background-color: #aea18b;padding-bottom: 5px;border-top: 1px solid #f4efd1;">
+        <div class="col-md-12 center" style="display: flex;justify-content: center;">
+          <img style="max-width: 170px;" src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"> 
+        </div>
+        <br class="clear" />
+      </div>
+      <div class="col-md-12 center" style="display: flex;justify-content: center;background-color: #aea18b;">
+        <span class="footer-copyright">Copyright All Rights Reserved © 2017 <br/>2127 S Vasco Road Suite A Livermore, CA 94550</span>
+      </div>
+    </section>
   <!-- footer-->
   </div> <!-- footer-container -->
 <script>

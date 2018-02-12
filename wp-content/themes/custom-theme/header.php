@@ -62,9 +62,20 @@
 	</style>
 </head>
 <body class="page-template page-template-onecolumn-page page-template-onecolumn-page-php page page-id-15 desktop chrome">
+	<?php 
+		$v = 0;
+		$menuargs = array(
+			"theme_location" => "primary",
+			"menu_class" => "s-menu",
+			"menu_id" => "MAIN-MENU",
+		);
+		$items_mobile = wp_get_nav_menu_items( 'MAIN-MENU', $menuargs); 
+	?> 
 	<nav class="mobiletop">   
 		<ul id="menu-footer-menu" class="menu">
-			<li class="menu-item "><a class="text-caps" href="#">aaa</a></li>
+			<?php foreach( $items_mobile as $item ){ ?>
+				<li class="menu-item "><a class="text-caps" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+			<?php } ?>
 		</ul>	
 	</nav>
 	<!-- container -->
@@ -79,17 +90,15 @@
 			</div>
 		</section>
 
-		<section class="header-logo-mobile">
-			<div class="top-nav-holder-768">
+		<section class="header-logo-mobile" style="background-color: #fff5e3;">
+			<div class="top-nav-holder-768" style="background-color: #fff5e3;">
 				<!-- call-us-container -->
-				<div class="col span_8_of_12 menu-left-480">
-					<div  style="padding-left: 25px !important;position: relative !important;top: 10px !important;">
-						<a href="#">
-							owoqwwq
-						</a>
-					</div>
+				<div style="position:absolute;left: 20px;">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"> 
 				</div>
-				<div class="col span_4_of_12 menu-icon menu-right-480">
+				<div class="col-md-8 menu-left-480 left" style="">
+				</div>
+				<div class="col-md-4 menu-icon menu-right-480 left" style="padding-right:0px;text-align: right;">
 				   <a href="#" id="pull"><img src="<?php bloginfo('template_directory'); ?>/images/menu.jpg" alt="Menu"> </a>
 				</div>
 			</div>
@@ -110,6 +119,21 @@
 						<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
 					<?php } ?>
 				</ul>
+			</div>
+		</section>
+
+		<section class="contact-1-mobile" style="background-color: #fff5e3;">
+			<div style="background-color: #ffebc8;display: flex;padding-top: 15px;padding-bottom: 15px;width: 100%;">
+				<div class="col-md-12 left">
+					<div class="contact-container">
+						<div class="left" style="width:10%;">
+							<img style="position: relative;top: 9px;left:15px;width:7vw;padding:0px;" src="<?php bloginfo('template_directory'); ?>/images/home/phone.png" alt="Menu"> 
+						</div>
+						<div class="contact-mobile left" style="padding:0px;position:relative;left:20px;width:80%;">
+							<span>Call us to receive your custom quote (xxx) xxx-xxxx <br/> or complete our <a class="contact-link" href="#">request a quote form</a></span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -145,7 +169,25 @@
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="banner-mobile">
+			<div style="background-color: #fff2db;display: flex;">
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b1.jpg" alt="Menu"> 
+				</div>
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b2.jpg" alt="Menu"> 
+				</div>
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b3.jpg" alt="Menu"> 
+				</div>
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b4.jpg" alt="Menu"> 
+				</div>
+			</div>
+		</section>
+
+
+		<section class="contact-section">
 			<div style="background-color: #ffebc8;display: flex;padding-top: 15px;padding-bottom: 15px;">
 				<div class="col-md-6 left center">
 					<span class="center contact-1">HOUSTON'S BEST WINE CELLARS BUILDERS</span>
@@ -164,7 +206,17 @@
 		</section>
 
 
-
+		<section class="contact-2-mobile">
+			<div style="background-color: #ffebc8;display: flex;padding-top: 15px;padding-bottom: 15px;width: 100%;">
+				<div class="col-md-12 left">
+					<div class="contact-container">
+						<div class="center" style="padding:0px;position:relative;left:20px;width:100%;">
+							<span class="contact-1 co-text">HOUSTON'S BEST WINE<br/>CELLARS BUILDERS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 

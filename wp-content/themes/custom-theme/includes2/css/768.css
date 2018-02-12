@@ -371,12 +371,15 @@ p, ul,
 
 
 }
-/*999*/
-@media screen and (max-width: 999px) {
+/*768*/
+@media screen and (max-width: 768px) {
 	.col-1-container {
 	    width: 100%;
 	    height: auto;
 	}
+}
+@media screen and (max-width: 480px) {
+
 	.sidebar-480 {
 		display: block;
 	}
@@ -437,6 +440,13 @@ p, ul,
 
 	.call-us span {
 	    font-size: 9vw;
+	}
+
+	.menu-left-480 {
+		width: 80%;
+	}
+	.menu-right-480 {
+		width: 20%;
 	}
 
 	.top-nav-holder-768 {

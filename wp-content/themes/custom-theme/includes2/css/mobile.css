@@ -62,7 +62,7 @@
 }
 
 /*Styles for screen 600px and lower*/
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 768px) {
   .mobiletop { 
       height: auto;
     }
@@ -108,7 +108,7 @@
 }
 
 /*Styles for screen 515px and lower*/
-@media only screen and (max-width : 999px) {
+@media only screen and (max-width : 768px) {
 
   .mobiletop {
     display: block;
@@ -130,7 +130,7 @@
   display: none;
 }
 /*Smartphone*/
-@media only screen and (max-width : 999px) {
+@media only screen and (max-width : 480px) {
   .tablet-s4{
     display: none !important;
   }
@@ -162,6 +162,7 @@
   .mobiletop li a {
     border-bottom: 1px solid #ffffff;
     text-align: left;
+    font-size: 1.2em !important;
   }
 
   /*.mobiletop li:last-child {
