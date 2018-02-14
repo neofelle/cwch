@@ -52,7 +52,6 @@ Template Name: Homepage
 	    		<div style="background-color: #aea18b;padding-top: 10px;padding-bottom: 10px;padding-left: 25px;padding-right: 25px;">
 	    			<span class="footnote text-left">Project Features</span>
 	    		</div>
-	    		<br/>
 	    		<ul class="nav-pages">
 	    			<?php foreach( $items_left as $item ){ ?>
 	    				<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>

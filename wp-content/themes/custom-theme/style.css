@@ -282,6 +282,7 @@ li.menu-item{
 .nav-pages > li > a{
 	color:black;
 	text-decoration: none;
+	font-size: 0.7vw;
 }
 .nav-pages > li > a:hover{
 	text-decoration: underline;
@@ -290,7 +291,7 @@ li.menu-item{
 	width: 60%;margin: 0 auto;
 }
 .bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
-    height: 37vw;
+    height: 40.25vw;
 }
 .tw-container{
 	height: 11vw;
@@ -344,6 +345,14 @@ li.menu-item{
 	    right: 0vw;
 	    width: 138%;
 	}
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 41.25vw;
+	}
+}
+@media screen and (max-width: 1790px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 42.25vw;
+	}
 }
 @media screen and (max-width: 1720px) {
 	.button-red-2 {
@@ -358,6 +367,9 @@ li.menu-item{
 	    padding-top: 3px;
 	    padding-bottom: 5px;
 	    text-transform: uppercase;
+	}
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 44vw;
 	}
 	.button-red {
 	    background-color: #be0a2f;
@@ -390,6 +402,11 @@ li.menu-item{
 	    background-size: auto;
 	}
 }
+@media screen and (max-width: 1590px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 46.25vw;
+	}
+}
 @media screen and (max-width: 1450px) {
 	.bottom-block {
 	    width: 90%;
@@ -406,6 +423,9 @@ li.menu-item{
 	    top: 69%;
 	    width: 95%;
 	    left: 6%;
+	}
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 47.25vw;
 	}
 	.nav-pages {
 	    list-style-type: none;
@@ -426,10 +446,21 @@ li.menu-item{
 	.nav-pages > li > a {
 	    color: black;
 	    text-decoration: none;
-	    font-size: 1.3vw;
+	    font-size: 1vw;
+	}
+	.nav-pages > li {
+	    margin-bottom: 3px;
+	    padding-bottom: 3px;
+	    border-bottom: 1px dotted black;
+	}
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 46.25vw;
 	}
 }
 @media screen and (max-width: 1336px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 46.25vw;
+	}
 	.button-blue {
 	    background-color: #002768;
 	    margin: 0 auto;
@@ -463,8 +494,25 @@ li.menu-item{
 		width: 100%;
 		text-align: center !important;
 	}
-	.bg-block-content-1, .bg-block-content-2, .bg-block-content-3, .bg-block-content-4 {
-	    height: 46vw;
+}
+@media screen and (max-width: 1228px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 48.25vw;
+	}
+}
+@media screen and (max-width: 1188px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 50.25vw;
+	}
+}
+@media screen and (max-width: 1128px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 51.25vw;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
+    	height: 54.25vw;
 	}
 }
 @media screen and (max-width: 1030px) {
