@@ -204,7 +204,7 @@ Template Name: Homepage
 		<section class="contact-section">
 			<div style="background-color: #fbe2b5;display: flex;padding-top: 9px;padding-bottom: 9px;box-shadow: 1px 2px 6px 0px #0e0e0e7a;">
 				<div class="col-md-4 left">
-					<span class="contact-1" style="text-transform: uppercase;"><?php the_title(); ?></span>
+					<span class="contact-1">CONTACT US</span>
 				</div>
 				<div class="col-md-8 left">
 					<div class="contact-container">
@@ -233,47 +233,72 @@ Template Name: Homepage
 		</section>
 
 		<br class="clear">
-		<section class="blog" style="background-color: white !important;">
-	        <div class="col-md-12 page-content" style="width: 100%;padding-right: 20px;padding-left: 30px;margin: 0 auto;display: block;">
-				 <?php $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 			 		
-				 	   $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'order'=>'DESC', 'posts_per_page'=>4, 'paged' => $paged)); ?>
-			    	<?php if ( $wpb_all_query->have_posts() ) : ?>
-	    				<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-
-							<div class="col col-md-12 blog-container mobile-divider">  
-								<div class="col blog-1 left blog-img">
-								<?php if(has_post_thumbnail()){ ?>
-									<?php the_post_thumbnail(); ?>
-								<?php }else{ ?>
-									<img class="img-frame img-center" src="<?php bloginfo('template_directory'); ?>/images/blog-img.jpg">
-								<?php } ?>
-								</div>
-								<div class="col blog-2 left blog-text">
-									<h3 class="title-blog"><?php the_title(); ?></h3>
-									<p class="content-blog"><?php echo get_post_meta( get_the_ID(), 'short_desc', true); ?></p>
-									<br style="clear: both;" />
-									<a href="<?php the_permalink(); ?>" class="button-blog">Read More</a>
-								</div>
-							</div>
-							<br class="clear"><br>
-			     		<?php endwhile; ?>
-				 	<?php endif; ?>
-				<br style="clear:both;">
-				<div style="margin-top: 20px;text-align: center;padding-bottom: 40px;">
-					<div>	
-					    <?php
-					    	$big = 999999999; // need an unlikely integer
-					    	echo paginate_links(array(
-							    'base' => str_replace($big,'%#%', get_pagenum_link($big)),
-							    'format' => '?paged=%#%',
-							    'current' => max( 1, get_query_var('paged') ),
-							    'total' => $wpb_all_query->max_num_pages
-							));
-					    ?>
-					    <?php  wp_reset_postdata(); ?>	
-				    </div>
+		<section class="contact-us" style="background-color: white !important;">
+			<div>
+				<div class="col-md-6 left" style="background-color: white !important;">
+					<div class="block">
+						<div class="cdc-1 col-md-2 left">
+							<img src="<?php bloginfo('template_directory'); ?>/images/contact/c-1.png">
+						</div>
+						<div class="cdc-2 col-md-10 left">
+							<span class="txt-contact">Dallas Texas Office</span>
+							<br/>
+							<span class="bold txt-contact">972-454-0480</span>
+						</div>
+					</div>
+					<br class="clear" /><br/><br/>
+					<div class="block">
+						<div class="cdc-1 col-md-2 left">
+							<img src="<?php bloginfo('template_directory'); ?>/images/contact/c-2.png">
+						</div>
+						<div class="cdc-2 col-md-10 left">
+							<span class="txt-contact">Chicago Illinois Office</span>
+							<br/>
+							<span class="bold txt-contact">773-234-0112</span>
+						</div>
+					</div>
+					<br class="clear" /><br/><br/>
+					<div class="block">
+						<div class="cdc-1 col-md-2 left">
+							<img src="<?php bloginfo('template_directory'); ?>/images/contact/c-3.png">
+						</div>
+						<div class="cdc-2 col-md-10 left">
+							<span class="txt-contact">San Antonio Texas Office</span>
+							<br/>
+							<span class="bold txt-contact">210-591-1595</span>
+						</div>
+					</div>
+					<br class="clear" /><br/><br/>
+					<div class="block">
+						<div class="cdc-1 col-md-2 left">
+							<img src="<?php bloginfo('template_directory'); ?>/images/contact/c-4.png">
+						</div>
+						<div class="cdc-2 col-md-10 left">
+							<span class="txt-contact">Toll Free Phone</span>
+							<br/>
+							<span class="bold txt-contact">866-646-7089</span>
+						</div>
+					</div>
+					<br class="clear" /><br/><br/>
+					<div class="block">
+						<div class="cdc-1 col-md-2 left">
+							<img src="<?php bloginfo('template_directory'); ?>/images/contact/c-5.png">
+						</div>
+						<div class="cdc-2 col-md-10 left">
+							<span class="txt-contact">Email</span>
+							<br/>
+							<span class="bold txt-contact">info@winecellarspec.com</span>
+						</div>
+					</div>
+					<br class="clear" /><br/><br/>
+					<div class="block" style="padding-left: 25px !important;">
+						<span class="txt-contact">For a FREE wine cellar design, <a class="link-page" href="#">click here or visit our website at http://www.winecellarspec.com.</a></span>
+					</div>
 				</div>
-	        </div>		
+				<div class="col-md-6 left" style="background-color: white !important;">
+					<img style="width: 100%;" src="<?php bloginfo('template_directory'); ?>/images/contact/cwch-web-contact-content.png">
+				</div>
+			</div>
 		</section>
 
 
