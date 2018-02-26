@@ -123,7 +123,7 @@
 		</section>
 
 		<section class="contact-1-mobile" style="background-color: #fff5e3;">
-			<div style="background-color: #ffebc8;display: flex;padding-top: 15px;padding-bottom: 15px;width: 100%;">
+			<div class="container-contact">
 				<div class="col-md-12 left">
 					<div class="contact-container">
 						<div class="left" style="width:10%;">
@@ -207,7 +207,7 @@
 
 
 		<section class="contact-2-mobile">
-			<div style="background-color: #ffebc8;display: flex;padding-top: 15px;padding-bottom: 15px;width: 100%;">
+			<div class="container-contact">
 				<div class="col-md-12 left">
 					<div class="contact-container">
 						<div class="center" style="padding:0px;position:relative;left:20px;width:100%;">
