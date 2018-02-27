@@ -126,13 +126,29 @@
 			<div style="background-color: #ffebc8;display: flex;padding-top: 15px;padding-bottom: 15px;width: 100%;">
 				<div class="col-md-12 left">
 					<div class="contact-container">
-						<div class="left" style="width:10%;">
+						<div class="left ft-ct" style="width:10%;">
 							<img style="position: relative;top: 9px;left:15px;width:7vw;padding:0px;" src="<?php bloginfo('template_directory'); ?>/images/home/phone.png" alt="Menu"> 
 						</div>
-						<div class="contact-mobile left" style="padding:0px;position:relative;left:20px;width:80%;">
+						<div class="contact-mobile left ft-ct" style="padding:0px;position:relative;left:20px;width:80%;">
 							<span>Call us to receive your custom quote (xxx) xxx-xxxx <br/> or complete our <a class="contact-link" href="#">request a quote form</a></span>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section class="banner-mobile">
+			<div style="background-color: #fff2db;display: flex;">
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b1.jpg" alt="Menu"> 
+				</div>
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b2.jpg" alt="Menu"> 
+				</div>
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b3.jpg" alt="Menu"> 
+				</div>
+				<div class="banner-block">
+					<img src="<?php bloginfo('template_directory'); ?>/images/home/b4.jpg" alt="Menu"> 
 				</div>
 			</div>
 		</section>

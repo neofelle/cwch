@@ -82,8 +82,8 @@
 	<div class="page-container">
 		<section class="header-logo">
 			<div style="background-color: #fff2db;height: 100px;">
-				<div class="center-logo">
-					<img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"> 
+				<div class="center-logo" style="z-index: 1;">
+					<a href="<?php echo get_permalink( get_page_by_path( 'home' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"></a> 
 				</div>
 				<div class="col-md-6 left center" style="padding-top: 35px;"><span class="header-caption">Contemporary & Traditional Designs Engineered for Stability</span></div>
 				<div class="col-md-6 left center" style="padding-top: 35px;"><span class="header-caption">Commercial & Residential Wine Cellar Specialist Builders</span></div>
@@ -93,8 +93,8 @@
 		<section class="header-logo-mobile" style="background-color: #fff5e3;">
 			<div class="top-nav-holder-768" style="background-color: #fff5e3;">
 				<!-- call-us-container -->
-				<div style="position:absolute;left: 20px;">
-					<img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"> 
+				<div style="position:absolute;left: 20px;z-index: 1;">
+					<a href="<?php echo get_permalink( get_page_by_path( 'home' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"></a>
 				</div>
 				<div class="col-md-8 menu-left-480 left" style="">
 				</div>
@@ -126,10 +126,10 @@
 			<div class="container-contact">
 				<div class="col-md-12 left">
 					<div class="contact-container">
-						<div class="left" style="width:10%;">
-							<img style="position: relative;top: 9px;left:15px;width:7vw;padding:0px;" src="<?php bloginfo('template_directory'); ?>/images/home/phone.png" alt="Menu"> 
+						<div class="left ft-ct" style="width:10%;">
+							<img style="position: relative;top: 9px;left:15px;width:7vw;padding:0px;" src="<?php bloginfo('template_directory'); ?>/images/home/phone.png" alt="Menu">
 						</div>
-						<div class="contact-mobile left" style="padding:0px;position:relative;left:20px;width:80%;">
+						<div class="contact-mobile left ft-ct" style="padding:0px;position:relative;left:20px;width:80%;">
 							<span>Call us to receive your custom quote (xxx) xxx-xxxx <br/> or complete our <a class="contact-link" href="#">request a quote form</a></span>
 						</div>
 					</div>

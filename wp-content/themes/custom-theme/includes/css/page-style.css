@@ -995,6 +995,17 @@ a.button-blog {
 	    width: 90%;
 	    left: 5%;
 	}
+	.ft-ct {
+	    position: relative;
+	    top: 3px;
+	}
+	.mobiletop li a {
+	    font-size: 4vw !important;
+	    display: block;
+	}
+	p {
+	    font-size: 3.5vw;
+	}
 	.nav-pages > li > a {
 	    color: black;
 	    text-decoration: none;
@@ -1107,6 +1118,9 @@ a.button-blog {
 	    width: 90%;
 	    left: 5%;
 	}
+	p {
+	    font-size: 4vw;
+	}
 	.col-md-7.left.cd-1.tw-container {
 	    position: relative;
 	    bottom: 4px;
@@ -1163,6 +1177,15 @@ a.button-blog {
 	.s-2 {
 		position: relative;
 		bottom:3.5vw;
+	}
+	.content-title {
+	    text-align: left;
+	    color: white;
+	    font-size: 4.2vw;
+	    font-weight: 100;
+	    line-height: 20px;
+	    display: block;
+	    width: 90%;
 	}
 }
 @media screen and (max-width: 369px) {

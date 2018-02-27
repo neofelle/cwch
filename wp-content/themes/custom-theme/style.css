@@ -900,12 +900,23 @@ li.menu-item{
 	    width: 90%;
 	    left: 5%;
 	}
+	.ft-ct {
+	    position: relative;
+	    top: 13px;
+	}
 	.nav-pages > li > a {
 	    color: black;
 	    text-decoration: none;
 	    font-size: 3.8vw;
 	    line-height: 33px !important;
 	    display: block;
+	}
+	.mobiletop li a {
+	    font-size: 4vw !important;
+	    display: block;
+	}
+	p {
+	    font-size: 3.5vw;
 	}
 	.footnote {
 	    width: 100%;
@@ -1054,6 +1065,15 @@ li.menu-item{
 	.s-2 {
 		position: relative;
 		bottom:3.5vw;
+	}
+	.content-title {
+	    text-align: left;
+	    color: white;
+	    font-size: 4.2vw;
+	    font-weight: 100;
+	    line-height: 20px;
+	    display: block;
+	    width: 90%;
 	}
 }
 @media screen and (max-width: 369px) {
