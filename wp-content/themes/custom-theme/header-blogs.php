@@ -149,7 +149,7 @@
 	<div class="col span_12_of_12 nav_main desktop-nav-1">
 	    <div class="top-nav-holder desktop-nav-1">
 	      	<div class="col span_4_of_12 top-nav n1">
-				<div class="logo">
+				<div class="logo"  style="z-index: 1;">
 					<a href="<?php echo get_option('home'); ?>">
 						<?php the_custom_logo(); ?>
 					</a>

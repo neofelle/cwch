@@ -487,6 +487,11 @@ li.menu-item{
     	height: 46.25vw;
 	}
 }
+@media screen and (max-width: 1366px) {
+	.bg-block-content-1, .bg-block-content-2, .bg-block-content-3, .bg-block-content-4 {
+    	height: 45.95vw;
+	}
+}
 @media screen and (max-width: 1336px) {
 	.bg-block-content-1,.bg-block-content-2,.bg-block-content-3,.bg-block-content-4{
     	height: 46.25vw;

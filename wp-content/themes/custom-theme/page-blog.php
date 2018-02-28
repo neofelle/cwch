@@ -82,8 +82,8 @@
 	<div class="page-container">
 		<section class="header-logo">
 			<div style="background-color: #fff2db;height: 100px;">
-				<div class="center-logo">
-					<img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"> 
+				<div class="center-logo" style="z-index: 1;">
+					<a href="<?php echo get_permalink( get_page_by_path( 'home' ) ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/home/ribbon.png" alt="Menu"></a> 
 				</div>
 				<div class="col-md-6 left center" style="padding-top: 35px;"><span class="header-caption">Contemporary & Traditional Designs Engineered for Stability</span></div>
 				<div class="col-md-6 left center" style="padding-top: 35px;"><span class="header-caption">Commercial & Residential Wine Cellar Specialist Builders</span></div>
