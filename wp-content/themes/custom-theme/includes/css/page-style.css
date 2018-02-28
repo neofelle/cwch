@@ -137,10 +137,11 @@ ul.nav-desktop > li > a:hover{
 .contact-1{
     font-size: 1vw;
     font-weight: 300;
-    padding-left: 35px;
+    padding-left: 0px;
     font-family: 'montserrat-2';
     position: relative;
     top: 6px;
+    left: 35px;
 }
 .contact-link{
 	color:#be0a2f;

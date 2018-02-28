@@ -216,7 +216,7 @@
 		<section class="contact-section">
 			<div style="background-color: #fbe2b5;display: flex;padding-top: 9px;padding-bottom: 9px;box-shadow: 1px 2px 6px 0px #0e0e0e7a;">
 				<div class="col-md-4 left">
-					<span class="contact-1" style="text-transform: uppercase;">Category Featured Projects</span>
+					<span class="contact-1" style="text-transform: uppercase;"><?php the_title(); ?></span>
 				</div>
 				<div class="col-md-8 left">
 					<div class="contact-container">
