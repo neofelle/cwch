@@ -130,7 +130,7 @@
                             <img style="position: relative;top: 9px;left:15px;width:7vw;padding:0px;" src="<?php bloginfo('template_directory'); ?>/images/home/phone.png" alt="Menu"> 
                         </div>
                         <div class="contact-mobile left ft-ct" style="padding:0px;position:relative;left:20px;width:80%;">
-                            <span>Call us to receive your custom quote (xxx) xxx-xxxx <br/> or complete our <a class="contact-link" href="#">request a quote form</a></span>
+                            <span>Call us to receive your custom quote <a href="tel:2818097283">(281)-809-7283</a> <br/> or complete our <a class="contact-link" href="#">request a quote form</a></span>
                         </div>
                     </div>
                 </div>
