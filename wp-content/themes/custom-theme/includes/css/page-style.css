@@ -20,6 +20,11 @@ Version: 1.2
     box-shadow:         5px -1px 20px -5px #969191;
 }
 @font-face {
+	font-family: 'trajan-regular';
+	src: url('includes/css/fonts/trajan-regular.ttf') format('truetype');
+	font-weight: normal !important;
+}
+@font-face {
 	font-family: 'montserrat-1';
 	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
 	src: url('fonts/Montserrat-Regular.otf');
@@ -29,6 +34,11 @@ Version: 1.2
 	font-family: 'montserrat-2';
 	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
 	src: url('fonts/Montserrat-Light.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'georgia';
+	src: url('includes/css/fonts/georgia.ttf') format('truetype');
 	font-weight: normal !important;
 }
 /*------------------------------------*\
@@ -49,7 +59,10 @@ ul.nav-desktop li, ul.nav-footer li {
 .sidebar-480 {
 	display: none;
 }
-
+.bottom-block-2 > a:hover,.bottom-block > a:hover{
+	color: #47fde4 !important;
+	text-decoration: none !important;
+}
 .mobiletop {
 	display: none;
 }
@@ -81,6 +94,7 @@ h3{
 \*------------------------------------*/
 .header-caption{
 	font-size: 1.1vw;
+	font-family: 'georgia';
 }
 ul.nav-desktop > li {
     padding-top: 12px;
@@ -117,6 +131,9 @@ ul.nav-footer > li > a {
 .link-page{
     color: #be0b2f;
     text-decoration: underline;
+}
+.georgia{
+	font-family: 'georgia';
 }
 ul.nav-desktop > li > a {
     font-size: 1vw;
@@ -200,6 +217,9 @@ ul.nav-desktop > li > a:hover{
     color: white;
     padding-top: 3px;
     padding-bottom: 5px;
+}
+.blog-content{
+	padding-right: 20px;padding-left: 30px;
 }
 .button-blue:hover{
 	color:#00f1ff;
@@ -622,9 +642,24 @@ a.button-blog {
 	p{
 		font-size: 2vw;
 	}
+	.blog-img > img {
+	    width: 100% !important;
+	    padding: 0px;
+	    height: 100% !important;
+	    margin: 0 auto;
+	    display: flex;
+	    margin-bottom: 20px;
+	}
+	.col.blog-1.left.blog-img{
+		padding: 0px;
+	}
 	h3{
 		font-size: 2.5vw;
 	}	
+	.blog-content{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 	.ribbon{
 		display: none;
 	}
@@ -806,8 +841,11 @@ a.button-blog {
 	}
 	.contact-1 {
 	    font-size: 3.5vw;
-	    font-weight: 400;
-	    letter-spacing: 6px;
+	    font-weight: 200;
+	    letter-spacing: 3px;
+	    position: relative;
+	    left: 0px !important;
+	    font-family: 'trajan-regular';
 	}
 	.bottom-block {
 	    margin: 0 auto;
@@ -921,15 +959,6 @@ a.button-blog {
 @media screen and (max-width: 767px) {
 	.blog-1 {
 	    width: 100%;
-	}
-	.blog-img > img {
-	    width: 100% !important;
-	    padding: 0px;
-	    height: 100% !important;
-	    max-width: 300px;
-	    margin: 0 auto;
-	    display: flex;
-	    margin-bottom: 20px;
 	}
 	a.button-blog {
 	    background-color: #be0a2f;

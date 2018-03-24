@@ -1,7 +1,7 @@
 <?php get_header('blogs'); ?>
 		<br class="clear">
 		<section class="blog" style="background-color: white !important;">
-	        <div class="col-md-12 page-content" style="width: 100%;padding-right: 20px;padding-left: 30px;margin: 0 auto;display: block;">
+	        <div class="col-md-12 page-content blog-content" style="width: 100%;margin: 0 auto;display: block;">
 				 <?php $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 			 		
 				 	   $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'order'=>'DESC', 'posts_per_page'=>4, 'paged' => $paged)); ?>
 			    	<?php if ( $wpb_all_query->have_posts() ) : ?>

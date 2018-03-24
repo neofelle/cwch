@@ -19,10 +19,13 @@ Version: 1.2
     -moz-box-shadow:    5px -1px 20px -5px #969191;
     box-shadow:         5px -1px 20px -5px #969191;
 }
+.bottom-block-2 > a:hover,.bottom-block > a:hover{
+	color: #47fde4 !important;
+	text-decoration: none !important;
+}
 /*------------------------------------*\
     Fonts
 \*------------------------------------*/
-
 @font-face {
 	font-family: 'trajan-1';
 	src: url('includes/css/fonts/TrajanPro-Bold.otf');
@@ -31,6 +34,16 @@ Version: 1.2
 @font-face {
 	font-family: 'trajan-2';
 	src: url('includes/css/fonts/TrajanPro-Regular.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'trajan-regular';
+	src: url('includes/css/fonts/trajan-regular.ttf') format('truetype');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'georgia';
+	src: url('includes/css/fonts/georgia.ttf') format('truetype');
 	font-weight: normal !important;
 }
 /*------------------------------------*\
@@ -70,11 +83,15 @@ ul.nav-desktop li, ul.nav-footer li {
 	padding-left: 0px;
 	max-height: 287px;
 }
+.georgia{
+	font-family: 'georgia';
+}
 /*------------------------------------*\
     Text Styles
 \*------------------------------------*/
 .header-caption{
 	font-size: 1.1vw;
+	font-family: 'georgia';
 }
 ul.nav-desktop > li {
     padding-top: 12px;
@@ -110,7 +127,7 @@ ul.nav-desktop > li > a:hover{
 .contact-1{
     font-size: 1.3vw;
     font-weight: 300;
-    font-family: 'trajan-2';
+    font-family: 'trajan-regular';
     position: relative;
     top:5px;
 }
@@ -150,7 +167,7 @@ ul.nav-desktop > li > a:hover{
     line-height: 35px;
     display: block;
     width: 90%;
-    font-family: 'trajan-2';
+    font-family: 'trajan-regular';
 }
 .content-title-2{
     text-align: justify;
@@ -442,7 +459,7 @@ li.menu-item{
 	.contact-1 {
 	    font-size: 1.5vw;
 	    font-weight: 300;
-	    font-family: 'trajan-2';
+	    font-family: 'trajan-regular';
 	    position: relative;
 	    top: 11px;
 	}
@@ -768,8 +785,11 @@ li.menu-item{
 	}
 	.contact-1 {
 	    font-size: 3.5vw;
-	    font-weight: 400;
-	    letter-spacing: 6px;
+	    font-weight: 200;
+	    letter-spacing: 3px;
+	    position: relative;
+	    left: 0px !important;
+	    font-family: 'trajan-regular';
 	}
 	.bottom-block {
 	    margin: 0 auto;
